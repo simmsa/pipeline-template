@@ -12,7 +12,7 @@ class CustomQualityChecker(QualityChecker):
     Custom QualityChecker that can be used to identify issues with the data quality.
 
     Built-in implementations of quality checkers can be found in the
-    [tsdat.qc.checkers](https://tsdat.readthedocs.io/en/latest/autoapi/tsdat/qc/checkers)
+    [tsdat.qc.checkers](https://tsdat.readthedocs.io/en/latest/API/qc/checkers)
     module.
 
     ---------------------------------------------------------------------------------"""
@@ -31,7 +31,6 @@ class CustomQualityChecker(QualityChecker):
     to not use any configuration parameters then please remove the code above."""
 
     def run(self, dataset: xr.Dataset, variable_name: str) -> NDArray[np.bool8]:
-
         # True values in the failures array indicate a quality problem.
         var_data = dataset[variable_name]
         failures: NDArray[np.bool8] = np.zeros_like(var_data, dtype=np.bool8)  # type: ignore
@@ -47,7 +46,7 @@ class CustomQualityHandler(QualityHandler):
     data quality issues identified by a QualityChecker.
 
     Built-in implementations of tsdat QualityHandlers can be found in the
-    [tsdat.qc.handlers](https://tsdat.readthedocs.io/en/latest/autoapi/tsdat/qc/handlers)
+    [tsdat.qc.handlers](https://tsdat.readthedocs.io/en/latest/API/qc/handlers)
     module.
 
     ----------------------------------------------------------------------------"""

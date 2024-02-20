@@ -11,7 +11,7 @@ class CustomDataReader(DataReader):
     Custom DataReader that can be used to read data from a specific format.
 
     Built-in implementations of data readers can be found in the
-    [tsdat.io.readers](https://tsdat.readthedocs.io/en/latest/autoapi/tsdat/io/readers)
+    [tsdat.io.readers](https://tsdat.readthedocs.io/en/latest/API/io/readers)
     module.
 
     ---------------------------------------------------------------------------------"""

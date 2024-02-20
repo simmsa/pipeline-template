@@ -85,7 +85,7 @@ def ingest(
         help="Flag to generate boilerplate code for handling inputs stored in a data"
         " format not supported by tsdat out-of-the-box. To see a complete list of"
         " built-in data readers visit"
-        " https://tsdat.readthedocs.io/en/latest/autoapi/tsdat/io/readers",
+        " https://tsdat.readthedocs.io/en/latest/API/io/readers",
         prompt="Do you want to use a custom DataReader?\n",
     ),
     use_custom_data_converter: bool = typer.Option(
@@ -94,7 +94,7 @@ def ingest(
         " preprocessing actions to the raw data before it enters the data pipeline. Use"
         " this if the built-in data converters are not sufficient. To see a complete"
         " list of built-in DataConverters visit"
-        " https://tsdat.readthedocs.io/en/latest/autoapi/tsdat/io/converters",
+        " https://tsdat.readthedocs.io/en/latest/API/io/converters",
         prompt="Do you want to use a custom DataConverter?\n",
     ),
     use_custom_qc: bool = typer.Option(
@@ -103,7 +103,7 @@ def ingest(
         " corrections to the data. Use this if the built-in QualityCheckers or"
         " QualityHandlers are not sufficient. To see a complete list of "
         " list of built-in QualityCheckers and QualityHandlers visit"
-        " https://tsdat.readthedocs.io/en/latest/autoapi/tsdat/qc",
+        " https://tsdat.readthedocs.io/en/latest/API/qc/checkers",
         prompt="Do you want to use a custom QualityChecker or QualityHandler?\n",
     ),
 ):
@@ -199,7 +199,7 @@ def vap(
         " preprocessing actions to the data before it enters the data pipeline. Use"
         " this if the built-in data converters are not sufficient. To see a complete"
         " list of built-in DataConverters visit"
-        " https://tsdat.readthedocs.io/en/latest/autoapi/tsdat/io/converters",
+        " https://tsdat.readthedocs.io/en/latest/API/io/converters",
         prompt="Do you want to use a custom DataConverter?\n",
     ),
     use_custom_qc: bool = typer.Option(
@@ -208,7 +208,7 @@ def vap(
         " corrections to the data. Use this if the built-in QualityCheckers or"
         " QualityHandlers are not sufficient. To see a complete list of "
         " list of built-in QualityCheckers and QualityHandlers visit"
-        " https://tsdat.readthedocs.io/en/latest/autoapi/tsdat/qc",
+        " https://tsdat.readthedocs.io/en/latest/API/qc/checkers",
         prompt="Do you want to use a custom QualityChecker or QualityHandler?\n",
     ),
 ):
